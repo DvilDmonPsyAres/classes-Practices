@@ -30,7 +30,7 @@ DATABASE REGISTER
       PASSWORD
 */
 
-export class Ecommerce {
+class Ecommerce {
     constructor(name) {
         //ecommerce name
         this.name = name;
@@ -101,7 +101,7 @@ export class Ecommerce {
     }
 }
 
-export class User {
+class User {
     constructor(userName, email, password) {
         this.id = null;
         this.username = userName;
@@ -136,7 +136,7 @@ USERS
 
 }
 
-export class ShoppingCart {
+class ShoppingCart {
     constructor(...products) {
         this.products  = [...products]
         // this.balance = this.calculateBalance(...products);
@@ -155,26 +155,29 @@ export class ShoppingCart {
     CURRENT ADDED PRODUCTS
  */
 
-// let cart = new ShoppingCart("Laptop", "Xbox", "Pc")
-// console.log(cart)
-// let cart2 = new ShoppingCart();
-// console.log(cart2);
+let cart = new ShoppingCart("Laptop", "Xbox", "Pc")
+console.log(cart)
+let cart2 = new ShoppingCart();
+console.log(cart2);
 
-// const ecommerce = new Ecommerce("Ebay");
-// let user1 = new User("Alanbrown", "dvildmonpsy@gmail.com", "BMS123")
-// let user2 = new User("Alanbrown345", "dvildmonpsy@gmail.com", "BMS123")
-// user1.addBalance(1500, "BMS123")
-// ecommerce.register(user1);
-// ecommerce.addProducts("Keyboard", "technology", 2500);
-// ecommerce.addProducts("Mouse", "technology", 2500);
-// ecommerce.addProducts("Pc", "technology", 1500);
-// ecommerce.addProducts("Laptop", "technology", 2500);
-// console.log(ecommerce.users);
-// console.log(ecommerce.database)
-// console.log(ecommerce.stock)
-// console.log(ecommerce.removeProduct("Pc", "technology"))
-// console.log(ecommerce.stock)
-// console.log(ecommerce)
-// console.log(user1.getBalance("BMS123"))
-// console.log(ecommerce.register("BBgiu", "bbgiu45@gmail.com", "BBGIU123"))
-// console.log(ecommerce.register(user2));
+const ecommerce = new Ecommerce("Ebay");
+let user1 = new User("Alanbrown", "dvildmonpsy@gmail.com", "BMS123")
+let user2 = new User("Alanbrown345", "dvildmonpsy@gmail.com", "BMS123")
+user1.addBalance(1500, "BMS123")
+ecommerce.register(user1);
+ecommerce.addProducts("Keyboard", "technology", 2500);
+ecommerce.addProducts("Mouse", "technology", 2500);
+ecommerce.addProducts("Pc", "technology", 1500);
+ecommerce.addProducts("Laptop", "technology", 2500);
+console.log(ecommerce.users);
+console.log(ecommerce.database)
+console.log(ecommerce.stock)
+console.log(ecommerce.removeProduct("Pc", "technology"))
+console.log(ecommerce.stock)
+console.log(ecommerce)
+console.log(user1.getBalance("BMS123"))
+console.log(ecommerce.register("BBgiu", "bbgiu45@gmail.com", "BBGIU123"))
+console.log(ecommerce.register(user2));
+let user3 = new User("BBgiu", "bbgiu45@gmail.com", "BBGIU123")
+console.log(ecommerce.register(user3));
+console.log(ecommerce)
