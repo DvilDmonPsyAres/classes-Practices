@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-compatible" content="IE-EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(28, 28, 92, 1) 43%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        .boxes {
+            border: 2px solid white;
+            border-radius: 25px;
+
+            color: white;
+            text-align: center;
+            margin: 1rem;
+            width: 450px;
+            height: 250px;
+
+        }
+
+        h2 {
+            margin-top: 3rem;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 3rem;
+            border: 3px bold white;
+            border-radius: 10px;
+            font-size: 16px;
+            height: 20%;
+            width: 150px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        button:hover {
+            border: 3px bold white;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            height: 22%;
+            width: 160px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            margin-left: 5rem;
+        }
+
+        .box3 {
+            margin-right: 5rem;
+        }
+
+        .hidden-content {
+            display: none;
+        }
+
+        .hidden-content.reveal-btn {
+            display: block;
+        }
+    </style>
+    <title>Event Listeners</title>
+</head>
+<body>
+    <div class="title">
+        <h1 class="title-h1">Event Listeners</h1>
+    </div>
+    <div class="main">
+        <div class="boxes box-1">
+            <h2 class="heading">Example</h2>
+            <button onclick="alert('I Love JavaScript')" class="btn-1">Enter</button>
+        </div>
+        <div class="boxes box-2">
+            <h2 class="heading">Example2</h2>
+            <button class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box-3">
+            <h2 class="heading">Example3</h2>
+            <button class="btn-3 reveal-btn">Enter
+            </button>
+        </div>
+    </div>
+    <div class="hidden-content boxes">
+        <h1>HOLA MI BROTHER</h1>
+        <p>leeeeeeeeeeeeeeeeeeeeeelelelelelaaaaaaaaaaaaaaaaaaa estaaaaaaaaaaa nocueeeeeeeeeeeee</p>Whats Up bro ???
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

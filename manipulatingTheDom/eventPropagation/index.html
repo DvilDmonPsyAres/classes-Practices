@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body{
+    background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,92,1) 43%, rgba(0,212,255,1) 100%);
+                color: aliceblue;
+                font-size: 45px;
+}
+.div2{
+    background-color: black;
+    margin: 3rem;
+    padding: 5rem;
+    border: 10px solid white;
+    border-radius: 25px;
+}
+
+.div1{
+    background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,92,1) 43%, rgba(0,212,255,1) 100%);
+                margin: 3rem;
+                padding: 5rem;
+                display: flex;
+                flex-direction: column;
+                border: 5px solid white;
+                border-radius: 25px;
+}
+button{
+    margin: 2rem;
+    margin-top: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 18px;
+}
+button:hover{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+        </style>
+        <title>Event Propagation</title>
+
+    </head>
+    <body>
+<div class="div2">
+    2
+    <div class="div1">
+        1
+        <button>Click</button>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-compatible" content="IE-EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Dom Manipulation</title>
+    <style>
+.container {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: 5rem;
+
+}
+
+ul {
+    list-style: none;
+    border-radius: 5px;
+}
+li{
+    font-family: Helvetica;
+    padding: 1rem;
+    border: 1px solid white;
+    margin-left: 4rem;
+    margin-right: 6rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,92,1) 43%, rgba(0,212,255,1) 100%);
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,92,1) 43%, rgba(0,212,255,1) 100%);
+}
+.top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#main-heading {
+    font-size: 45px;
+}
+.list-items {
+    font-weight: bold;
+    font-size: 22px;
+}
+.list-items:hover {
+    font-weight: bold;
+    font-size: 26px;
+    color:aqua
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 id="main-heading">Favorite Movies</h1>
+    <!-- Space between -->
+    <ul>
+
+        <li class="list-items top">The Matrix</li>
+        <li class="list-items">StarWars</li>
+        <li class="list-items">HarryPotter</li>
+        <li class="list-items" id="li4">Lord of the Rings</li>
+        <li class="list-items bottom">Marvel</li>
+
+    </ul>
+</div>
+
+<!-- <div class="container2">
+    <h1 id="main-heading">FavoriteSports</h1>
+    <ul>
+
+        <li class="list-items top">The Matrix</li>
+        <li class="list-items">StarWars</li>
+        <li class="list-items">HarryPotter</li>
+        <li class="list-items" id="li4">Lord of the Rings</li>
+        <li class="list-items bottom">Marvel</li>
+
+    </ul>
+</div> -->
+<script src="app.js"></script>
+</body>
+</html>
